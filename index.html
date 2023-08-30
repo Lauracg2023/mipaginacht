@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL CIELO</title>
+    <link rel="stylesheet" href="mipaginacht.css"> 
+    <script src="mipaginacht.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="https://www.elcielohotel.com/experiencias">Servicios</a></li>
+                <li><a href="https://www.youtube.com/watch?v=S0S9iLdoYDk">Acerca de</a></li>
+                <li><a href="https://www.elcielohotel.com/press-contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <img src="imagenes/el-cielo-restaurante.jpg.webp" alt="Imagen de Hero">
+        <h1>¡RESERVA EN EL MEJOR RESTAURANTE DE MEDELLIN!</h1>
+        <p>Siempre lo mejor y la casa del verdadero sabor</p>
+        <a href="https://book.omnibees.com/hotel/12735?_gl=1*pkcczq*_gcl_au*MzA0OTM4NzguMTY5MzM1MjgxMQ..*_ga*MTQ2MzAzNTM3MS4xNjkzMzUyODEx*_ga_J1HGT7X7FV*MTY5MzM1MjgxMC4xLjEuMTY5MzM1Mjg4Ni41NC4wLjA.&_ga=2.201453016.810817061.1693352811-1463035371.1693352811" class="cta-button">¡Reserva Ya!</a>
+    </section>
+    
+    <section class="features">
+        <div class="feature">
+            <img src="imagenes/1-80.jpg" alt="Imagen de Característica 1">
+            <h2>PERSONAL</h2>
+            <p>Contamos con los mejores chefs de todo Colombia, unos meseros de alta calidad y muy amables.</p>
+        </div>
+        <div class="feature">
+            <img src="imagenes/el-cielo-restaurante-colombia.jpg" alt="Imagen de Característica 2">
+            <h2>COMIDA</h2>
+            <p>Estamos ofreciendo los mejores platos y de una increible calidad a nivel mundial.</p>
+        </div>
+        <div class="feature">
+            <img src="imagenes/mejor agra.jpg" alt="Imagen de Característica 3">
+            <h2>LUGAR</h2>
+            <p>Este es un lugar donde te puedes sentir cómodo, unico y libre.</p>
+        </div>
+    </section>
+    
+    <section class="testimonial">
+        <blockquote>
+            <p>No es la comida es la experiencia,
+                vale la pena conocer la exclusividad de los platos su historia y composición, lo recomiendo no solo por la comida y sus sabores sino también por que estimulan otros sentidos a través de las 11 experiencias que ofrecen.
+                .</p>
+            <cite>- Salomon Villada</cite>
+        </blockquote>
+    </section>
+
+    <section class="contact">
+        <h2>Contacto</h2>
+        <p>¡Contáctanos para obtener más información!</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario con Validación</title>
+        <script>
+            function validateForm() {
+                const name = document.forms["myForm"]["name"].value;
+                const email = document.forms["myForm"]["email"].value;
+                const message = document.forms["myForm"]["message"].value;
+                
+                if (name === "" || email === "" || message === "") {
+                    alert("Por favor complete todos los campos.");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myForm" onsubmit="return validateForm()">
+            <input type="text" name="name" placeholder="Nombre">
+            <input type="email" name="email" placeholder="Correo Electrónico">
+            <textarea name="message" placeholder="Mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+
+    
+    <footer>
+        <p>Derechos Reservados &copy; 2023</p>
+    </footer>
+</body>
+</html>
